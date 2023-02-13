@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+header {
+  max-height: 5rem;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+h1 {
+  font-family: "Poppins";
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+p {
+  opacity: 0.8;
+  line-height: 150%;
+}
+
+h1,
+p {
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  font: inherit;
+  color: hsl(257, 40%, 49%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.75rem 3rem;
+  border: none;
+  border-radius: 20px;
+  margin: 1rem 0;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  max-height: 5rem;
+}
+
+img {
+  margin: 0 0.5rem;
+}
+.flex-container {
+  text-align: right;
+}
+
+@media (max-width: 90rem) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .grid-container {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .flex-container {
+    text-align: center;
+  }
+}
